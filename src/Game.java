@@ -109,7 +109,7 @@ public class Game {
             if(playingField[0][2] == playingField[1][2] && playingField[1][2] == playingField[2][2] && playingField[2][2] != 0) break;
             // Проверка на победу комбинации диагоналей
             if(playingField[0][0] == playingField[1][1] && playingField[1][1] == playingField[2][2] && playingField[2][2] != 0) break;
-            if(playingField[0][2] == playingField[1][1] && playingField[1][1] == playingField[0][2] && playingField[0][2] != 0) break;
+            if(playingField[0][2] == playingField[1][1] && playingField[1][1] == playingField[2][0] && playingField[2][0] != 0) break;
 
             // смена хода на другого игрока
             if (userId == 1) {
