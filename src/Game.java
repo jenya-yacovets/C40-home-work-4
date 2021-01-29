@@ -119,6 +119,24 @@ public class Game {
             }
         }
 
+        System.out.println("========== Игра завершена ==========");
+
+        for (int i=0; i<playingField.length; i++) {
+            for (int j=0; j<playingField[i].length; j++) {
+
+                if (playingField[i][j] == 0) {
+                    System.out.print("* ");
+                } else if (playingField[i][j] == 1) {
+                    System.out.print("X ");
+                } else {
+                    System.out.print("0 ");
+                }
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+
         if (userId == 1) {
             System.out.println("Победил " + nameUser_1);
         } else {
